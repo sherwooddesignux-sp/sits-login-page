@@ -1,11 +1,24 @@
+i {
+  margin-right: 5px;
+}
+
+span {
+  display: block;
+}
+
+.accordion-item {
+  border: 0;
+}
+
+.bg-su {
+  background: #242f60;
+  color: white;
+}
+
 body {
   padding: 10px;
   font-family: "arial";
   background: #f1f1f1;
-}
-
-.lgn-p {
-  font-size: 12px;
 }
 
 .sv-page-header {
@@ -15,7 +28,6 @@ body {
 
 .navbar-brand h2 {
   color: #fff;
-  margin: 10px 0 10px 10px;
 }
 
 legend {
@@ -42,7 +54,7 @@ strong {
   font-size: 14px;
 }
 
-#applicant-agent-message {
+#agent-advice {
   display: none;
 }
 
@@ -57,7 +69,7 @@ strong {
 }
 
 p {
-  font-size: ..8em;
+  font-size: 0.8em;
 }
 
 h2,

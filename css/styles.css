@@ -1,0 +1,78 @@
+body {
+  padding: 10px;
+  font-family: "arial";
+  background: #f1f1f1;
+}
+
+.lgn-p {
+  font-size: 12px;
+}
+
+.sv-page-header {
+  color: #fff;
+  background-image: linear-gradient(75deg, #242f60 80%, #0073b9 100%);
+}
+
+.navbar-brand h2 {
+  color: #fff;
+  margin: 10px 0 10px 10px;
+}
+
+legend {
+  font-size: 1em;
+}
+
+.login-btn {
+  background: #242f60;
+  color: #fff;
+}
+
+input {
+  padding: 7px;
+}
+
+strong {
+  color: #242f60;
+}
+
+/*.warning {
+   // display: none;
+  }*/
+#email-warning {
+  font-size: 14px;
+}
+
+#applicant-agent-message {
+  display: none;
+}
+
+.login-panel {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.1);
+  transition: background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+p {
+  font-size: ..8em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #242f60;
+  margin: 0.5em 0px;
+}
+
+button {
+  width: 12rem;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 15px 10px 10px 0;
+}

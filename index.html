@@ -1,12 +1,131 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>--- TODO ---</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/styles.css"
+    />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>This is a paragraph in the body of the HTML document.</p>
+<div class="container-fluid">
+        <nav class="navbar navbar-light">
+          <span class="navbar-brand mb-0">
+            <img src="https://learner.swansea.ac.uk/urd/sits.urd/images/sv-header.png" width="200" alt="">
+          </span>
+        </nav>
+        <nav class="navbar sv-page-header">
+          <span class="navbar-brand mb-0">
+            <h2>Learner Gateway</h2>
+            <p class="sub-title">Apply for courses and access Student Information</p>
+          </span>
+        </nav>
+        <div class="row align-items-start">
+          <div class="col-md-3 col-0">
+          </div>
+          <div class="col-md-6 col-0 login-panel">
+            <h3><i class="fa-solid fa-graduation-cap"></i> Learner Gateway Login</h3>
+            <div class="login-options">
+              <fieldset>
+                <legend>Help us direct you correctly. Which of the following are you?</legend>
+                <div class="radio-group">
+                  <div class="radio-option">
+                    <input type="radio" id="applicant" name="email" value="applicant" aria-describedby="applicant-help-text">
+                    <label for="applicant">Applicant</label>
+<p class="lgn-p" id="applicant-help-text">Not staff or current student;<strong> no Swansea University </strong>email</p>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="swansea" name="email" value="swansea" aria-describedby="current-student-staff-help-text">
+                    <label for="swansea">Current Student or staff</label>
+                    <p class="lgn-p" id="current-student-staff-help-text">with <strong>swansea.ac.uk</strong> email</p>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+      
+            <div id="swansea-content" class="hidden-content" aria-live="polite" hidden>
+              <h4 class="mt-5">Swansea University Login</h4>
+              <p>Log in here if you are a staff member, an enrolling student or current student attending Swansea University.</p>
+              <button class="login-btn">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+              <hr>
+              <h5 class="mt-4"><i class="fa-solid fa-circle-question"></i> Help and Support</h5>
+              <h6>Issues Enrolling or Logging in?</h6>
+              <p class="small">Check our <a href="https://myuni.swansea.ac.uk/enrolment/">Enrolment information</a> or contact <a href="https://swanseauniversity.service-now.com/">IT Service Desk</a></p>
+              <p>
+              <h6>Have an ongoing application for course?</h6>
+              <p class="small">Please go the <a href="https://codepen.io/Chris-Sherwood/full/zxxeZyB?email=applicant">applicant login</a> and login using the personal email (non-swansea) you used to create the application.
+              </p>
+            </div>
+            <div id="tne-content" class="hidden-content" aria-live="polite" hidden>
+              <h4 class="mt-5">Swansea University Partnership Login</h4>
+              <p>Log in here if you are an enrolling student or current student attending through a partnership university. </p>
+              <button class="login-btn">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+              <hr>
+              <h5 class="mt-4"><i class="fa-solid fa-circle-question"></i> Help and Support</h5>
+              <p class="small">If you are experiencing any urgent IT issues please telephone +44 1792 604000 during the hours of 0800 – 1700 GMT, where we can help you.
+              </p>
+            </div>
+            <div id="applicant-content" class="hidden-content" aria-live="polite" hidden>
+              <h4 class="mt-5">Applicant Login</h4>
+              <p>Log in here if you are an applicant, with an ongoing application. <br>Not applied yet? Apply through our course pages for chosen degree.</p>
+              <div class="alert alert-info" role="alert" id="applicant-agent-message">
+               <h5> <i class="fa-solid fa-circle-info"></i>  Agent Applications</h5> Please only login using your supplied agent details (AGC code), not as an applicant. If you have any issues contact Admissions Team.
+              </div>
+              <form>
+                <div>
+                  <label for="email">Email or Username</label>
+                  <input class="d-block" type="email" id="email" size="50" name="email" required>
+      
+                  <span class="warning" id="email-warning">Enter the email used for your application (not a @swansea.ac.uk address).
+</span>
+      
+                </div>
+                <div class="mt-3">
+                  <label for="password">Password</label>
+                  <input class="d-block" type="password" id="password" size="50" name="password" required>
+                </div>
+                <div>
+                  <button class="login-btn" type="submit">Login</button> <button class="btn-outline-primary">Forgotten Password</button>
+                </div>
+              </form>
+              <hr>
+              <h5 class="mt-4"><i class="fa-solid fa-circle-question"></i> Help and Support</h5>
+              <h6>Admissions Help</h6>
+              <p class="small">Visit <a href="https://www.swansea.ac.uk/applyonline/learner-gateway-application-portal/">How to Apply</a> or <a href="https://www.swansea.ac.uk/admissions/ask-us-live/">Contact Admissions Team</a></p>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-0">
+          </div>
+        </div>
+      </div>
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/login-script.js"></script>
   </body>
 </html>
